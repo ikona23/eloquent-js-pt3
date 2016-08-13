@@ -77,3 +77,22 @@ var double = function (moon) {
 
 var moon = double
 console.log(double(5))
+
+// ----------------------------
+
+var books = [
+  {name: 'book1', author: 'author1', type: 'comics'},
+  {name: 'book1', author: 'author1', type: 'roman'},
+  {name: 'book1', author: 'author1', type: 'comics'},
+  {name: 'book1', author: 'author1', type: 'poem'}
+]
+
+var poems = books.filter(function(books) {
+return books.type === 'poem'
+})
+// var books = []
+// for (var i = 0; i < books.length; i++) {
+//   if (books[i].type === 'poem')
+//     poem.push(books[i])
+// }
+console.log(books[3]);
